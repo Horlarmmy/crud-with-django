@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script>
+alert("Login Successful")
+</script>
+Hello, <b>{{ user.username }}</b>!
+
+
+<div align="center">
+		<h3><a href="">Edit</a> &nbsp; profile</h3>
+    
+        <p> <a href="{% url 'logout' %}">Logout </a>
+        <br/>
+        <p><a href="{% url 'index' %}">Continue to view</a> and read blog post</p>
+    
+</div>
+{% endblock %}
