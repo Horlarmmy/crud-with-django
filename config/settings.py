@@ -126,4 +126,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-TAWKTO_ID_SITE='https://investor-blog.herokuapp.com'
+TAWKTO_ID_SITE='https://investor-blog.herokuapp.com/'
