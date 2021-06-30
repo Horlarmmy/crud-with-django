@@ -1,3 +1,4 @@
+{%load tawkto_tags%}
 <!DOCTYPE html>
 <html>
 
@@ -84,34 +85,13 @@
         {% endblock content %}
         <!-- Footer -->
 
-        <footer class="py-3 bg-grey"><p>
-            <!--Start of Tawk.to Script-->
-
-<script type="text/javascript">
-
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-
-(function(){
-
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-
-s1.async=true;
-
-s1.src='https://embed.tawk.to/60da37af7f4b000ac03a02ee/1f9a6j3uf';
-
-s1.charset='UTF-8';
-
-s1.setAttribute('crossorigin','*');
-
-s0.parentNode.insertBefore(s1,s0);
-
-})();
-
-</script>
-
-<!--End of Tawk.to Script--> 
-</p>
+        <footer class="py-3 bg-grey">
    <p class="m-0 text-dark text-center ">Copyright &copy; Investor Enterprise </p>
-        </footer>
+      <h1>Chat with an agent.</h1> 
+<textarea cols="150" rows="20"> {% tawkto_script user_name='User test' user_email='example@example.com' %} 
+</textarea> 
+<textarea cols="150" rows="20"> {% tawkto_script widget_id='somewidgetid' %}
+ </textarea> 
+ {% tawkto_script user_name='User test' user_email='example@example.com' %} </body>  </footer>
     </body>
 </html>
