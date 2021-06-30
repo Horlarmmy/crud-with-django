@@ -87,11 +87,7 @@
 
         <footer class="py-3 bg-grey">
    <p class="m-0 text-dark text-center ">Copyright &copy; Investor Enterprise </p>
-      <h1>Chat with an agent.</h1> 
-<textarea cols="150" rows="20"> {% tawkto_script user_name='User test' user_email='example@example.com' %} 
-</textarea> 
-<textarea cols="150" rows="20"> {% tawkto_script widget_id='somewidgetid' %}
- </textarea> 
- {% tawkto_script user_name='User test' user_email='example@example.com' %} </body>  </footer>
+      {% tawkto_script user_name=request.user.get_full_name user_email=request.user.email %}
+ </body>  </footer>
     </body>
 </html>
