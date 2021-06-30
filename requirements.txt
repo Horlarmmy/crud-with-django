@@ -3,6 +3,7 @@ asgiref==3.3.4
 distlib==0.3.1
 Django==3.2
 django-environ==0.4.5
+django-tawkto==0.3
 filelock==3.0.12
 pytz==2021.1
 six==1.15.0
